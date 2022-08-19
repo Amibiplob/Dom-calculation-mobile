@@ -22,7 +22,7 @@
   <section class="container">
     <div class="row text-center">
       <div class="col-4">
-        <button onclick="red()" class="p-4 rounded border border-danger" id="1">
+        <button onclick="red()" onmouseout="white()" class="p-4 rounded border border-danger" id="1">
           red
         </button>
       </div>
@@ -32,7 +32,7 @@
         </button>
       </div>
       <div class="col-4">
-        <button onclick="green()" class="p-4 rounded border border-danger">
+        <button onclick="green()" onmouseout="white()" class="p-4 rounded border border-danger">
           green
         </button>
       </div>
@@ -89,6 +89,11 @@
       document.body.style.backgroundColor = "red";
       document.body.style.color = 'white';
       document.getElementById('h1').innerText = "This is Red";
+    }
+    function white() {
+      document.body.style.backgroundColor = 'whitesmoke';
+      document.getElementById('h1').innerText = " Simple Calculator";
+      document.body.style.color = 'black';
     }
   </script>
 
